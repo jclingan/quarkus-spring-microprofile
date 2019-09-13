@@ -1,0 +1,68 @@
+executing mvnw instead of mvn
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.acme:quarkus-springmp-person >------------------
+[INFO] Building quarkus-springmp-person 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ quarkus-springmp-person ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ quarkus-springmp-person ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ quarkus-springmp-person ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ quarkus-springmp-person ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ quarkus-springmp-person ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ quarkus-springmp-person ---
+[INFO] Building jar: /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/target/quarkus-springmp-person-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- quarkus-maven-plugin:999-SNAPSHOT:build (default) @ quarkus-springmp-person ---
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Beginning quarkus augmentation
+[INFO] [org.jboss.threads] JBoss Threads version 3.0.0.Beta5
+[INFO] [org.hibernate.jpa.boot.internal.PersistenceXmlParser] HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+[INFO] [org.hibernate.Version] HHH000412: Hibernate Core {5.4.4.Final}
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 2449ms
+[INFO] [io.quarkus.creator.phase.runnerjar.RunnerJarPhase] Building jar: /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/target/quarkus-springmp-person-1.0-SNAPSHOT-runner.jar
+[INFO] 
+[INFO] --- quarkus-maven-plugin:999-SNAPSHOT:native-image (default) @ quarkus-springmp-person ---
+[INFO] [io.quarkus.creator.phase.nativeimage.NativeImagePhase] Running Quarkus native-image plugin on OpenJDK 64-Bit GraalVM CE 19.2.0
+[INFO] [io.quarkus.creator.phase.nativeimage.NativeImagePhase] /Users/jclingan/.sdkman/candidates/java/19.2.0-grl/jre/bin/native-image -J-Djava.util.logging.manager=org.jboss.logmanager.LogManager -J-Drx.unsafe-disable=true -J-Dio.netty.leakDetection.level=DISABLED -J-Dvertx.disableDnsResolver=true -J-Dio.netty.noUnsafe=true --initialize-at-build-time= -H:InitialCollectionPolicy=com.oracle.svm.core.genscavenge.CollectionPolicy$BySpaceAndTime -jar quarkus-springmp-person-1.0-SNAPSHOT-runner.jar -J-Djava.util.concurrent.ForkJoinPool.common.parallelism=1 -H:FallbackThreshold=0 -H:+ReportExceptionStackTraces -H:+PrintAnalysisCallTree -H:-AddAllCharsets -H:EnableURLProtocols=http,https --enable-all-security-services -H:+JNI --no-server -H:-UseServiceLoaderFeature -H:+StackTrace
+[quarkus-springmp-person-1.0-SNAPSHOT-runner:31562]    classlist:  14,186.14 ms
+[quarkus-springmp-person-1.0-SNAPSHOT-runner:31562]        (cap):   1,716.85 ms
+[quarkus-springmp-person-1.0-SNAPSHOT-runner:31562]        setup:   3,013.25 ms
+13:47:21,058 WARN  [com.net.con.sou.URLConfigurationSource] No URLs will be polled as dynamic configuration sources.
+13:47:21,070 INFO  [com.net.con.sou.URLConfigurationSource] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:47:21,103 INFO  [org.hib.Version] HHH000412: Hibernate Core {5.4.4.Final}
+13:47:21,118 INFO  [org.hib.ann.com.Version] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:47:21,145 INFO  [org.hib.dia.Dialect] HHH000400: Using dialect: io.quarkus.hibernate.orm.runtime.dialect.QuarkusPostgreSQL95Dialect
+13:47:22,371 INFO  [org.jbo.threads] JBoss Threads version 3.0.0.Beta5
+13:47:22,891 INFO  [com.arj.ats.arjuna] ARJUNA012170: TransactionStatusManager started on port 50523 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+Warning: RecomputeFieldValue.ArrayIndexScale automatic substitution failed. The automatic substitution registration was attempted because a call to sun.misc.Unsafe.arrayIndexScale(Class) was detected in the static initializer of rx.internal.util.unsafe.ConcurrentCircularArrayQueue. Detailed failure reason(s): Could not determine the field where the value produced by the call to sun.misc.Unsafe.arrayIndexScale(Class) for the array index scale computation is stored. The call is not directly followed by a field store or by a sign extend node followed directly by a field store. 
+Warning: RecomputeFieldValue.ArrayBaseOffset automatic substitution failed. The automatic substitution registration was attempted because a call to sun.misc.Unsafe.arrayBaseOffset(Class) was detected in the static initializer of rx.internal.util.unsafe.ConcurrentCircularArrayQueue. Detailed failure reason(s): Could not determine the field where the value produced by the call to sun.misc.Unsafe.arrayBaseOffset(Class) for the array base offset computation is stored. The call is not directly followed by a field store or by a sign extend node followed directly by a field store. 
+Warning: RecomputeFieldValue.ArrayIndexScale automatic substitution failed. The automatic substitution registration was attempted because a call to sun.misc.Unsafe.arrayIndexScale(Class) was detected in the static initializer of rx.internal.util.unsafe.SpscUnboundedArrayQueue. Detailed failure reason(s): Could not determine the field where the value produced by the call to sun.misc.Unsafe.arrayIndexScale(Class) for the array index scale computation is stored. The call is not directly followed by a field store or by a sign extend node followed directly by a field store. 
+[quarkus-springmp-person-1.0-SNAPSHOT-runner:31562]     analysis:  26,652.18 ms
+Printing call tree to /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/target/reports/call_tree_quarkus-springmp-person-1.0-SNAPSHOT-runner_20190911_134757.txt
+Printing list of used classes to /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/target/reports/used_classes_quarkus-springmp-person-1.0-SNAPSHOT-runner_20190911_134802.txt
+Printing list of used packages to /Users/jclingan/working/quarkus/spring/article/quarkus-springmp-person/target/reports/used_packages_quarkus-springmp-person-1.0-SNAPSHOT-runner_20190911_134802.txt
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:13 min
+[INFO] Finished at: 2019-09-11T13:48:09-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.quarkus:quarkus-maven-plugin:999-SNAPSHOT:native-image (default) on project quarkus-springmp-person: Failed to generate a native image: Failed to build native image: Image generation failed -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
