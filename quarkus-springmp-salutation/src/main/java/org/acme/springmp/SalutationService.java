@@ -11,16 +11,18 @@ public class SalutationService {
     public SalutationService(@Value("${salutation}") String salutation) {
         this.salutation = salutation;
     }
+
     public String getSalutation() {
 
-	long time=0;
+        long time = 0;
 
         // Simulate a slow service to trigger timeout on caller
-        try { TimeUnit.MILLISECONDS.sleep(time = (int)(Math.random()*1000));
-        } catch(Exception ex) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(time = (int) (Math.random() * 1000));
+        } catch (Exception ex) {
         }
 
-	System.out.println("Timeout was " + time + " milliseconds");
+        System.out.println("Paused for " + time + " milliseconds");
 
         return salutation;
     }
