@@ -1,5 +1,5 @@
 # @Autowire MicroProfile into Spring with Quarkus
-This project demonstrates using both Spring and MicroProfile APIs in the same application with Quarkus. This guide also covers Quarkus Live Coding and native compilation
+This project demonstrates using both Spring and MicroProfile APIs in the same application with Quarkus. It also covers Quarkus Live Coding and native compilation. This includes Spring DI, Spring Web, and Spring Data JPA APIs with MicroProfile Fault Tolerance, MicroProfile Health, MicroProfile Metrics, and the MicroProfile Rest Client.
 
 Sample set of applications that use both Spring APIs and MicroProfile APIs together on Quarkus.
 
