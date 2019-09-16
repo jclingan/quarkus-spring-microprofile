@@ -11,17 +11,7 @@ Applications
 * Java 8
 * Maven 3.5.3+
 * GraalVM 19.2+ with native-image installed
-* Docker (Optional)
-
-## ********* IMPORTANT NOTE ********* 
-Until Quarkus 0.22.0 is released, which is imminent, Quarkus version 999-snapshot will need to be installed locally. To do this:
-* `git clone https://github.com/quarkusio/quarkus.git`
-* Make sure [GraalVM is installed](https://www.graalvm.org/downloads/) and in your path.
-  * Example: `sdk install java 19.2.0-grl` and `sdk use java 19.2.0-grl`
-  * Make sure docker daemon is running
-  * `export GRAALVM_HOME=${JAVA_HOME}`
-  * `$GRAALVM_HOME/bin/gu install native-image`  #  If native-image is not already installed
-* From quarkus directory, run `mvn clean install -DskipTests`
+* Docker
 
 ## Run Application in dev mode
 ### Start salutation application
