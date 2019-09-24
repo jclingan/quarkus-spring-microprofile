@@ -8,6 +8,7 @@ Applications
 * **quarkus-springmp-person** Simple microservice that uses Spring DI, Spring Web, Spring Data JPA, MicroProfile Fault Tolerance, MicroProfile Metrics, MicroProfile Health, MicroProfile Rest Client, and Hibernate ORM to manage (CRUD) a Person entity and invoke the quarkus-springmp-salutation service.
 
 ## Requirements
+* Quarkus 0.22.0+
 * Java 8
 * Maven 3.5.3+
 * GraalVM 19.2+ with native-image installed
