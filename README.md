@@ -4,7 +4,7 @@ This project demonstrates using both Spring and MicroProfile APIs in the same ap
 Sample set of applications that use both Spring APIs and MicroProfile APIs together on Quarkus.
 
 Applications
-* **quarkus-springmp-salutation** Simple microservice that exposes a hard-coded salutation ("Hello") at a RESETful endpoint using Spring Web APIs.
+* **quarkus-springmp-salutation** Simple microservice that exposes a hard-coded salutation ("Hello") at a RESTful endpoint using Spring Web APIs.
 * **quarkus-springmp-person** Simple microservice that uses Spring DI, Spring Web, Spring Data JPA, MicroProfile Fault Tolerance, MicroProfile Metrics, MicroProfile Health, MicroProfile Rest Client, and Hibernate ORM to manage (CRUD) a Person entity and invoke the quarkus-springmp-salutation service.
 
 ## Requirements
