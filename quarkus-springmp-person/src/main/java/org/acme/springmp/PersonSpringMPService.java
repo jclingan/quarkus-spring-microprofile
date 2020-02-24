@@ -8,6 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+// RegisterForReflection will enable this app to run in native mode, otherwise
+// the fallback method will be "dead code eliminated". Note, this can be done
+// via configuration instead of using an annotation, but for this example the
+// annotation makes it more obvious. See the Native Application Tips Guide for
+// taking the configuration approach:
+// https://quarkus.io/guides/writing-native-applications-tips
+
+@RegisterForReflection
 @Service
 public class PersonSpringMPService {
 
